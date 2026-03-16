@@ -1,13 +1,15 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Home } from "@/pages/Home";
 
 function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<div className="text-white p-8">BodyBlog — coming soon</div>} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
-  )
+  );
 }
 
-export default App
+export default App;

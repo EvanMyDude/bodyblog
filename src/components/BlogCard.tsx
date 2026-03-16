@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { EvervaultCard, Icon } from "@/components/ui/evervault-card";
-import { BlogPost, CATEGORY_COLORS } from "@/data/posts";
+import { type BlogPost, CATEGORY_COLORS } from "@/data/posts";
 
 export function BlogCard({ post }: { post: BlogPost }) {
   const categoryColor = CATEGORY_COLORS[post.category];
