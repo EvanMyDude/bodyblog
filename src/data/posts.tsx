@@ -25,6 +25,7 @@ export interface BlogPost {
   readTime: string;
   excerpt: string;
   content: React.ReactNode;
+  iframeSrc?: string;
 }
 
 export const posts: BlogPost[] = [
@@ -421,14 +422,8 @@ export const posts: BlogPost[] = [
     readTime: "45 min read",
     excerpt:
       "A patient's guide to posture correction and pain relief. Always seek medical advice first.",
-    content: (
-      <iframe
-        src="https://evanmydude.github.io/neck/"
-        className="w-full h-full border-0 rounded-xl"
-        title="Fix The Neck"
-        sandbox="allow-same-origin allow-scripts allow-popups"
-      />
-    ),
+    iframeSrc: "https://evanmydude.github.io/neck/",
+    content: null,
   },
 ];
 
