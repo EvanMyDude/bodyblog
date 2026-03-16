@@ -41,13 +41,3 @@ export function LeadText({ children }: { children: React.ReactNode }) {
     <p className="text-lg md:text-xl text-neutral-200 font-medium mb-6">{children}</p>
   );
 }
-
-export function BulletList({ items }: { items: React.ReactNode[] }) {
-  return (
-    <ul className="list-disc list-inside text-neutral-400 leading-[1.85] mb-5 space-y-1.5 pl-2">
-      {items.map((item, i) => (
-        <li key={i}>{item}</li>
-      ))}
-    </ul>
-  );
-}
