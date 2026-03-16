@@ -10,7 +10,6 @@ export function Navbar() {
         <Link to="/" className="hover:text-white transition-colors">Home</Link>
         <a href="#posts" className="hover:text-white transition-colors">Posts</a>
         <a href="#categories" className="hover:text-white transition-colors">Categories</a>
-        <a href="#about" className="hover:text-white transition-colors">About</a>
       </div>
     </nav>
   );
